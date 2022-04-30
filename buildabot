@@ -1,0 +1,16 @@
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
+Notification.new("info", "Script", "By 1x1#1503 - Unnamed#0152") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+function script()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-66.41309356689453, 73.55400848388672, 809.0776977539062)
+wait("0.1")
+tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(10, Enum.EasingStyle.Linear)
+tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-40.818328857421875, 69.46713256835938, 8636.7060546875)}):Play()
+wait("10")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.5322380065918, -351.07537841796875, 9496.96484375)
+wait(20)
+end
+
+while true do
+wait(0)
+script()
+end
